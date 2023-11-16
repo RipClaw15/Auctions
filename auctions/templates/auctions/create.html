@@ -1,0 +1,45 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<div class="form">
+<div class="create_form">
+<h2>Create a Listing</h2>
+<br>
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+
+    <form action="{% url 'create' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <input class="form-control" autofocus type="text" name="name" placeholder="Title" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="price" placeholder="Price" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="description" placeholder="Description" required>
+        </div>
+        <div class="form-group">Category 
+            <select name="category" class="filter-selectbox">
+                <option value="Vehicles">Vehicles</option>
+                <option value="Properties">Properties</option>
+                <option value="Clothes">Clothes</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Animals">Animals</option>
+                <option value="Sports">Sports</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="image_url" placeholder="Image url" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="hidden" name="created_by" value ={{ user.username }}>
+        </div>
+        
+        <input class="btn btn-primary" type="submit" value="Create">
+    </form>
+</div>
+</div>
+{% endblock %}

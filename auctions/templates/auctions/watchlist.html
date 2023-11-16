@@ -1,0 +1,26 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+
+    <h2 style='padding:20px; text-align:center;'>Your Favorites</h2>
+    {% if listings|length %}
+    <div class="listings">
+    {% for item in listings %}
+    <a class="card" href="/listing/{{item.id}}">
+      <img src={{ item.image_url}} class="card-img-top" alt="Card image">
+      <div class="card-content">
+        <div class="card-text">
+          <span class="card-title" style='font-size:24px;'><strong>{{item.name}}</strong></span>
+          <span class="card-description">{{item.description}}</span>
+        </div>
+        <div class="card-price" style='font-size:24px;'><strong>{{ item.price }} $ </strong>
+        </div>
+      </div>
+    </a>     
+      {% endfor %}
+      {% else %}
+      <h1 style="text-align:center;">Your Favorites Page is Empty</h1>
+      {% endif %}
+    </div>
+{% endblock %}
