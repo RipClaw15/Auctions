@@ -26,7 +26,7 @@ body {
   padding: 0;
   display:flex;
   justify-content:space-between;
-  padding:0px 20px;
+  padding:0px 200px;
 }
 
 .nav li {
@@ -44,6 +44,9 @@ body {
   color: black;
   font-weight:bold;
   text-decoration: none;
+}
+.navbar {
+  padding:10px 200px;
 }
 
 
