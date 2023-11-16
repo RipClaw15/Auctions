@@ -1,0 +1,191 @@
+body {
+  background-color: rgb(242,244,245)
+}
+
+
+.icons-header {
+  text-align:center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content:flex-end;
+    
+}
+
+.icons-header li {
+  margin-right: 30px;
+}
+
+.icons-header li:last-child {
+  margin-right: 0;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content:space-between;
+  padding:0px 20px;
+}
+
+.nav li {
+  display: inline;
+  
+}
+
+.nav li a {
+  color: black;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+.icons-header a{
+  color: black;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+
+.listings {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column;
+}
+
+
+.card {
+  display: flex;
+  width: 80%; /* Set your preferred width */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-direction: row;
+  margin-bottom: 20px; /* Add margin between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.card img {
+  width: 150px; /* Set image width */
+  height: 150px; /* Set image height */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.card-content {
+  display: flex;
+  justify-content:space-between;
+  color: black;
+  font-weight:bold;
+  text-decoration: none;
+  width: 100%;
+  padding:0px 10px;
+}
+
+.card-text {
+  display:flex;
+  flex-direction:column;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: 0;
+}
+.login-form {
+  text-align:center;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    margin: 0;
+  
+    max-width: 400px; /* Set a maximum width for the form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.reg-form {
+  text-align:center;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+  
+    max-width: 400px; /* Set a maximum width for the form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.listed-item {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+  margin-right: 20%;
+  margin-left: 20%;
+  
+}
+
+.frame {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  text-align:center;
+  
+ 
+  width: 100%;
+  height: auto;
+  margin: 0;
+  max-height:400px;
+  max-width: 400px; /* Set a maximum width for the form */
+  padding: 20px;
+  border: 0.5px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.frame img {
+  width: 100%;
+  height: auto;
+  border-radius:8px;
+  max-height:360px;
+  max-width: 350px;
+}
+
+.frame .content{
+  text-align:left;
+}
+
+.date-text {
+  display: flex;
+    justify-content: space-between;
+    
+    margin-bottom:auto;
+}
+
+
+.create_form {
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  margin: 0;
+
+  width: 600px; /* Set a maximum width for the form */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+}
+
+.fabutton {
+  background: none;
+  border:none;
+}

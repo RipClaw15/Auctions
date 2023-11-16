@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}BidFrenzy{% endblock %}</title>
+        <script src="https://kit.fontawesome.com/99cd413302.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'auctions/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="app-header">
+            <nav class="navbar navbar-dark" style="background-color: #545454;">
+
+                    <h1>BidFrenzy</h1>
+
+                    <ul class="icons-header">
+                        <li>
+                    {% if user.is_authenticated %}
+                        <a class="favorites" href="{% url 'watchlist' %}">
+                            <div class="favorites-icon"><i style='font-size:36px;' class='far'>&#xf004;</i></div>
+                            <span class="fav-text"><strong>Favorites</strong></span>
+                        </a>
+                        </li>
+                        <li>    
+                        <a class="create-page" href="{% url 'create' %}">
+                            <div class="create-icon"><i style='font-size:36px' class='far'>&#xf0fe;</i></div>
+                            <span class="create-text"><strong>Sell</strong></span>
+                        </a>    
+                        </li>
+                        <li>
+                        <a class="user" href="{% url 'my_listings' %}">
+                            <div class="user-icon"><i style='font-size:36px' class='fas'>&#xf406;</i></div>
+                            <span class="user-text"><strong>{{ user.username }}</strong></span>
+                        </a>
+                        </li>
+                        <li>
+                        <a class="log-out" href="{% url 'logout' %}">
+                            <div class="log-out-icon"><i style='font-size:36px' class='fas'>&#xf2f5;</i></div>
+                            <span class="log-out-text"><strong>Sign Out</strong></span>
+                        </a>
+                        </li>
+                        <li>  
+                        {% else %} 
+                        <a class="log-in" href="{% url 'login' %}">
+                            <div class="log-in-icon"><i style='font-size:36px' class='fas'>&#xf2f6;</i></div>
+                            <span class="log-in-text"><strong>Sign in</strong></span>
+                        </a> 
+                        {% endif %}
+                    </li>
+                    </ul>
+            </nav>
+        </header>
+        <hr>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">Active Listings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'category' %}?category_id=Vehicles">Vehicles</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="{% url 'category' %}?category_id=Properties">Properties</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'category' %}?category_id=Clothes">Clothes</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="{% url 'category' %}?category_id=Electronics">Electronics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'category' %}?category_id=Animals">Animals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'category' %}?category_id=Sports">Sports</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="{% url 'category' %}?category_id=Others">Others</a>
+            </li>          
+        </ul>
+        <hr>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
