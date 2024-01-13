@@ -2,7 +2,7 @@
 
 {% block body %}
     <h2 style='padding:20px; text-align:center;'>{{ category }}</h2>
-
+    {% if listings|length %}
     <div class="listings">
         {% for item in listings %}
         <a class="card" href="/listing/{{item.id}}">
@@ -18,5 +18,7 @@
           </a>     
         {% endfor %}
       </div>
-
+      {% else %}
+      <h1 style="text-align:center;">There are no active listings in this category!</h1>
+      {% endif %}
 {% endblock %}

@@ -101,7 +101,7 @@ body {
   text-align:center;
     justify-content: center;
     align-items: center;
-    height: 55vh;
+    height: 45vh;
     margin: 0;
   
     max-width: 400px; /* Set a maximum width for the form */
@@ -113,7 +113,7 @@ body {
   text-align:center;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 55vh;
     margin: 0;
   
     max-width: 400px; /* Set a maximum width for the form */
@@ -130,7 +130,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70vh;
+  height: 50vh;
   margin-right: 20%;
   margin-left: 20%;
   
