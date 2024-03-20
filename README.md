@@ -25,7 +25,8 @@ For detailed instructions on setting up and running the project, refer to the [C
 
 ## Video Demo
 
-https://www.youtube.com/watch?v=U4pmqFhbStQ&t=5s
+[![Commerce](http://img.youtube.com/vi/U4pmqFhbStQ/0.jpg)](http://www.youtube.com/watch?v=U4pmqFhbStQ)
+
 
 
 ## Contributing
