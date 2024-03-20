@@ -25,7 +25,7 @@ For detailed instructions on setting up and running the project, refer to the [C
 
 ## Video Demo
 
-[![Project 2 - Commerce| Harvard CS50's Web Programming with Python and JavaScript]()]([https://i.ytimg.com/an_webp/U4pmqFhbStQ/mqdefault_6s.webp?du=3000&sqp=CPyB668G&rs=AOn4CLAhxRCsyxM0M_bTyREVIxNMdg8_fQ](https://www.youtube.com/watch?v=U4pmqFhbStQ&t=5s))
+https://www.youtube.com/watch?v=U4pmqFhbStQ&t=5s
 
 
 ## Contributing
