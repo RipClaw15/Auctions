@@ -25,7 +25,7 @@ For detailed instructions on setting up and running the project, refer to the [C
 
 ## Video Demo
 
-A video demo showcasing the features and functionality of Commerce will be available soon. Stay tuned for updates!
+[![Project 2 - Commerce| Harvard CS50's Web Programming with Python and JavaScript]([http://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg](https://www.youtube.com/watch?v=U4pmqFhbStQ&t=5s))]
 
 ## Contributing
 
