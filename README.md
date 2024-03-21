@@ -2,6 +2,11 @@
 
 Welcome to the Commerce project repository! This project is part of the CS50 Web course and serves as an online commerce platform where users can buy and sell items. Built using Django, this project implements various features to simulate a real-world e-commerce website.
 
+## Video Demo
+
+[![Commerce](http://img.youtube.com/vi/U4pmqFhbStQ/0.jpg)](http://www.youtube.com/watch?v=U4pmqFhbStQ)
+
+
 ## Key Features
 
 - **User Authentication:** Secure user authentication system allowing users to register, login, and logout.
@@ -22,11 +27,6 @@ To get started with Commerce, follow these steps:
 4. Run the Django development server.
 
 For detailed instructions on setting up and running the project, refer to the [CS50 Web project specification](https://cs50.harvard.edu/web/2020/projects/2/commerce/).
-
-## Video Demo
-
-[![Commerce](http://img.youtube.com/vi/U4pmqFhbStQ/0.jpg)](http://www.youtube.com/watch?v=U4pmqFhbStQ)
-
 
 
 ## Contributing
