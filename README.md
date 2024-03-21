@@ -26,8 +26,6 @@ To get started with Commerce, follow these steps:
 3. Configure the database settings.
 4. Run the Django development server.
 
-For detailed instructions on setting up and running the project, refer to the [CS50 Web project specification](https://cs50.harvard.edu/web/2020/projects/2/commerce/).
-
 
 ## Contributing
 
